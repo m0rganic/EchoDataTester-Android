@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/activity_vertical_margin"
+              android:layout_marginRight="@dimen/activity_vertical_margin"
+              android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:layout_gravity="left|center_vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Enter echo message"
+                android:id="@+id/textView"
+                android:layout_gravity="left|center_vertical"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="enter echo message"
+                android:id="@+id/echoMsgSend"
+                android:layout_gravity="left|center_vertical"
+                android:text="Hello World!"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:layout_gravity="left|center_vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Server Response"
+                android:id="@+id/textView2"
+                android:layout_gravity="left|center_vertical"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text=""
+                android:id="@+id/echoMsgResponse"
+                android:layout_gravity="left|center_vertical"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Ping"
+                android:id="@+id/pingButton"
+                android:layout_gravity="left"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Send"
+                android:id="@+id/echoButton"
+                android:layout_gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/m0rganic/Documents/projects/CastIronEchoProject/CastIronEcho/src/main/res/layout/activity_main.xml -->
